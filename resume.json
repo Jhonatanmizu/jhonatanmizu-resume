@@ -1,0 +1,143 @@
+{
+  "selectedTemplate": 2,
+  "headings": {
+    "work": "Experience",
+    "education": "Educational background",
+    "skills": "Skills",
+    "projects": "Projects"
+  },
+  "basics": {
+    "name": "JHONATAN J OLIVEIRA",
+    "phone": "75991202371",
+    "location": {
+      "address": "Salvador, Brazil"
+    },
+    "email": "jhonatanjesuss20@gmail.com",
+    "website": "https://github.com/jhonatanmizu"
+  },
+  "education": [
+    {
+      "institution": "University of state of Feira de santana",
+      "location": "Feira de Santana, Bahia",
+      "area": "Computer science",
+      "startDate": "March, 2025",
+      "endDate": "December, 2026",
+      "studyType": "M.S. in Computer Science"
+    },
+    {
+      "institution": "University of state of Bahia",
+      "location": "Alagoinhas,Bahia",
+      "studyType": "B.S in Information Systems",
+      "area": "Computer Science",
+      "startDate": "March, 2021",
+      "endDate": "December, 2024"
+    }
+  ],
+  "work": [
+    {
+      "website": "",
+      "startDate": "January, 2025",
+      "endDate": "Present",
+      "highlights": [
+        "Developed and maintained core wallet features (PIX, billets, balance) in the Midway mobile app using React Native, supporting critical financial operations.",
+        "Built and maintained multiple Backend-for-Frontend (BFF) services using NestJS, enabling secure and efficient communication between mobile clients and backend systems.",
+        "Designed and implemented payment initiation and processing flows, ensuring reliability and consistency in financial transactions.",
+        "Integrated external Payment Service Providers (PSPs) through APIs and webhooks, handling asynchronous payment events and status updates.",
+        "Implemented authentication and authorization mechanisms, ensuring secure access to sensitive financial features.",
+        "Ensured secure handling of financial and sensitive user data, following best practices for security and compliance.",
+        "Addressed security gaps and vulnerabilities identified during development and production monitoring.",
+        "Designed RESTful APIs with proper validation, error handling, and versioning to support scalable client integrations.",
+        "Used logs and metrics to investigate and resolve production issues, improving system reliability and incident response.",
+        "Implemented database migrations and safe schema evolution, minimizing risk during production changes.",
+        "Developed and maintained a payment web frontend using React, supporting internal and operational workflows.",
+        "Wrote unit tests for business-critical logic, improving code reliability and long-term maintainability."
+      ],
+      "company": "Midway Bank",
+      "position": "Mid level - Software Engineer",
+      "location": "Remote, Brazil"
+    },
+    {
+      "highlights": [
+        "Developed and maintained e-commerce frontend applications, including mobile apps, delivering customer-facing shopping experiences.",
+        "Implemented and maintained a cashback feature, supporting user rewards and purchase incentives.",
+        "Built and maintained a CRM system using Next.js and NestJS, enabling customer management and operational workflows.",
+        "Improved system reliability and error visibility through better logging, monitoring, and defensive coding practices.",
+        "Developed a digital closet mobile application using React Native, leveraging AI to generate outfit combinations for users.",
+        "Worked with Docker to containerize services and standardize development and deployment environments.",
+        "Maintained CI/CD pipelines for mobile applications, ensuring consistent builds and reliable releases.",
+        "Developed a Python microservice using FastAPI to support a virtual try-on feature, integrating it with existing systems.",
+        "Contributed to multiple projects across different domains, gaining broad exposure to product development and diverse technology stacks.",
+        "Wrote unit tests to ensure correctness and maintainability of critical application logic."
+      ],
+      "company": "Avantsoft",
+      "position": "Fullstack Software Engineer",
+      "location": "Remote, Brazil",
+      "startDate": "December, 2022",
+      "endDate": "December, 2024"
+    },
+    {
+      "highlights": [
+        "Led the planning and development of a mobile application designed to support fiscal operations for the city of Lauro de Freitas.",
+        "Built a solution that enabled fiscal agents to perform active field inspections, improving efficiency in public-sector workflows.",
+        "Defined the architecture and technology stack for the project, applying software engineering best practices.",
+        "Developed and maintained mobile applications using React Native, delivering features used in real-world government operations.",
+        "Developed and maintained a fiscal management system using Angular, supporting administrative and reporting needs.",
+        "Provided technical direction and oversight for new features and product improvements.",
+        "Implemented solutions with a focus on scalability, maintainability,."
+      ],
+      "company": "Solos Brazil",
+      "position": "Fullstack Software Engineer",
+      "location": "Remote,Brazil",
+      "startDate": "January,2021",
+      "endDate": "July, 2023"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Frontend",
+      "level": "",
+      "keywords": [
+        "React, React Native, Next.js, TypeScript, JavaScript, Tailwind CSS, Styled Components, responsive UI."
+      ]
+    },
+    {
+      "keywords": [
+        "Node.js, NestJS, Fastify, REST APIs, PostgreSQL, MongoDB, authentication & security, observability"
+      ],
+      "name": "Backend"
+    },
+    {
+      "keywords": [
+        "Feature ownership, problem solving, cross-functional communication."
+      ],
+      "name": "Softskills"
+    }
+  ],
+  "projects": [
+    {
+      "name": "SNUTS.js",
+      "description": "Developed SNUTS.js , a JavaScript test smell detection tool, and published technical articles.",
+      "keywords": [
+        "AST",
+        "Javascript",
+        "Node"
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "date": "",
+      "awarder": "",
+      "summary": ""
+    }
+  ],
+  "sections": [
+    "templates",
+    "profile",
+    "education",
+    "work",
+    "skills",
+    "projects",
+    "awards"
+  ]
+}
