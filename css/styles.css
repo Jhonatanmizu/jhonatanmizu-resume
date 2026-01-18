@@ -1,34 +1,130 @@
-/*!
-* Start Bootstrap - Resume v7.0.6 (https://startbootstrap.com/theme/resume)
-* Copyright 2013-2023 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-resume/blob/master/LICENSE)
-*/
-//
-// Scripts
-// 
+body {
+    background-color: #282a36;
+    color: #f8f8f2;
+    font-family: 'Muli', sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
-window.addEventListener('DOMContentLoaded', event => {
+.container-fluid {
+    padding: 3rem;
+}
 
-    // Activate Bootstrap scrollspy on the main nav element
-    const sideNav = document.body.querySelector('#sideNav');
-    if (sideNav) {
-        new bootstrap.ScrollSpy(document.body, {
-            target: '#sideNav',
-            rootMargin: '0px 0px -40%',
-        });
-    };
+.resume-section {
+    margin-bottom: 3rem;
+}
 
-    // Collapse responsive navbar when toggler is visible
-    const navbarToggler = document.body.querySelector('.navbar-toggler');
-    const responsiveNavItems = [].slice.call(
-        document.querySelectorAll('#navbarResponsive .nav-link')
-    );
-    responsiveNavItems.map(function (responsiveNavItem) {
-        responsiveNavItem.addEventListener('click', () => {
-            if (window.getComputedStyle(navbarToggler).display !== 'none') {
-                navbarToggler.click();
-            }
-        });
-    });
+.resume-section-content {
+    padding-left: 1rem;
+}
 
-});
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Saira Extra Condensed', sans-serif;
+    color: #f8f8f2;
+}
+
+h1 {
+    font-size: 3.5rem;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+h1 .text-primary {
+    color: #bd93f9 !important; /* Purple */
+}
+
+h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #50fa7b; /* Green */
+}
+
+h3 {
+    font-size: 2rem;
+    color: #8be9fd; /* Cyan */
+}
+
+.subheading {
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #ffb86c; /* Orange */
+}
+
+a {
+    color: #8be9fd; /* Cyan for links */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #bd93f9; /* Purple on hover */
+}
+
+.social-icons a {
+    display: inline-block;
+    height: 3rem;
+    width: 3rem;
+    background-color: #44475a;
+    color: #f8f8f2;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+.social-icons a:hover {
+    background-color: #bd93f9; /* Purple */
+}
+
+ul.fa-ul {
+    padding-left: 1em;
+}
+
+ul.fa-ul li {
+    margin-bottom: 0.5rem;
+}
+
+ul.fa-ul li .fa-li {
+    color: #50fa7b; /* Green checkmark */
+}
+
+.text-primary {
+    color: #bd93f9 !important;
+}
+
+hr {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    border-top: 1px solid rgba(248, 248, 242, 0.1);
+}
+
+/* Adjustments for print */
+@media print {
+    body {
+        background-color: #fff;
+        color: #000;
+    }
+    .container-fluid {
+        padding: 1rem;
+    }
+    .resume-section {
+        margin-bottom: 1rem;
+    }
+    h1, h2, h3, .subheading, a {
+        color: #000 !important;
+    }
+    .social-icons a {
+        background-color: #eee;
+        color: #000;
+    }
+    hr {
+        border-top: 1px solid #ccc;
+    }
+}
