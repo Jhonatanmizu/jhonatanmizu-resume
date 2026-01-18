@@ -1,21 +1,21 @@
 body {
-    background-color: #282a36;
-    color: #f8f8f2;
-    font-family: 'Muli', sans-serif;
-    margin: 0;
-    padding: 0;
+  background-color: #282a36;
+  color: #f8f8f2;
+  font-family: "Muli", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 .container-fluid {
-    padding: 3rem;
+  padding: 3rem;
 }
 
 .resume-section {
-    margin-bottom: 3rem;
+  margin-bottom: 3rem;
 }
 
 .resume-section-content {
-    padding-left: 1rem;
+  padding-left: 1rem;
 }
 
 h1,
@@ -24,117 +24,167 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Saira Extra Condensed', sans-serif;
-    color: #f8f8f2;
+  font-family: "Saira Extra Condensed", sans-serif;
+  color: #f8f8f2;
 }
 
 h1 {
-    font-size: 3.5rem;
-    line-height: 1;
-    text-transform: uppercase;
+  font-size: 3.5rem;
+  line-height: 1;
+  text-transform: uppercase;
 }
 
 h1 .text-primary {
-    color: #bd93f9 !important; /* Purple */
+  color: #bd93f9 !important; /* Purple */
 }
 
 h2 {
-    font-size: 3rem;
-    text-transform: uppercase;
-    color: #50fa7b; /* Green */
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #50fa7b; /* Green */
 }
 
 h3 {
-    font-size: 2rem;
-    color: #8be9fd; /* Cyan */
+  font-size: 2rem;
+  color: #8be9fd; /* Cyan */
 }
 
 .subheading {
-    font-weight: 500;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: #ffb86c; /* Orange */
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #ffb86c; /* Orange */
 }
 
 a {
-    color: #8be9fd; /* Cyan for links */
-    text-decoration: none;
+  color: #8be9fd; /* Cyan for links */
+  text-decoration: none;
 }
 
 a:hover {
-    color: #bd93f9; /* Purple on hover */
+  color: #bd93f9; /* Purple on hover */
 }
 
 .contact-info {
-    list-style: none;
-    padding-left: 0;
+  list-style: none;
+  padding-left: 0;
 }
 
 .contact-info li {
-    margin-bottom: 0.5rem;
-    font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
 }
 
 .contact-info strong {
-    color: #ffb86c; /* Orange */
-    margin-right: 0.5rem;
+  color: #ffb86c; /* Orange */
+  margin-right: 0.5rem;
 }
 
-
 .social-icons a {
-    display: inline-block;
-    color: #f8f8f2;
-    font-size: 1.5rem;
-    margin-right: 1rem;
-    margin-bottom: 1rem;
+  display: inline-block;
+  color: #f8f8f2;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
 }
 
 .social-icons a:hover {
-    color: #bd93f9; /* Purple */
+  color: #bd93f9; /* Purple */
 }
 
 ul.fa-ul {
-    padding-left: 1em;
+  padding-left: 1em;
 }
 
 ul.fa-ul li {
-    margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 ul.fa-ul li .fa-li {
-    color: #50fa7b; /* Green checkmark */
+  color: #50fa7b; /* Green checkmark */
 }
 
 .text-primary {
-    color: #bd93f9 !important;
+  color: #bd93f9 !important;
 }
 
 hr {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    border-top: 1px solid rgba(248, 248, 242, 0.1);
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  border-top: 1px solid rgba(248, 248, 242, 0.1);
 }
 
-/* Adjustments for print */
+/* Print improvements: mirror on-screen spacing and reduce large vertical gaps */
 @media print {
-    body {
-        background-color: #fff;
-        color: #000;
-    }
-    .container-fluid {
-        padding: 1rem;
-    }
-    .resume-section {
-        margin-bottom: 1rem;
-    }
-    h1, h2, h3, .subheading, a {
-        color: #000 !important;
-    }
-    .social-icons a {
-        background-color: #eee;
-        color: #000;
-    }
-    hr {
-        border-top: 1px solid #ccc;
-    }
+  html,
+  body,
+  .container-fluid,
+  .resume-section,
+  .resume-section-content {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  /* Use page margin 0 and rely on container padding to control visible margins */
+  @page {
+    margin: 0;
+  }
+
+  body {
+    background-color: #282a36 !important;
+    color: #f8f8f2 !important;
+    margin: 0;
+    -webkit-print-color-adjust: exact !important;
+  }
+
+  /* Keep the same container padding as on screen to preserve layout */
+  .container-fluid {
+    padding: 3rem !important;
+  }
+
+  /* Match on-screen spacing for sections and rules */
+  .resume-section {
+    margin-bottom: 3rem !important;
+  }
+
+  hr {
+    margin-top: 3rem !important;
+    margin-bottom: 3rem !important;
+    border-top: 1px solid rgba(248, 248, 242, 0.1) !important;
+  }
+
+  /* Preserve heading and accent colors and sizes */
+  h1,
+  h2,
+  h3,
+  .subheading,
+  a,
+  .text-primary {
+    color: inherit !important;
+    -webkit-print-color-adjust: exact !important;
+  }
+
+  .social-icons a {
+    background-color: transparent !important;
+    color: inherit !important;
+  }
+
+  /* Avoid forcing whole elements onto next page which can create large gaps.
+     Allow reasonable breaking so content fills pages similarly to the viewport. */
+  .experience-item,
+  .education-item,
+  .project-item {
+    break-inside: auto !important;
+    page-break-inside: auto !important;
+  }
+
+  /* Reduce default list spacing in print to tighten vertical rhythm */
+  ul {
+    margin-top: 0.25rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  p {
+    margin-top: 0.25rem !important;
+    margin-bottom: 0.5rem !important;
+  }
 }
